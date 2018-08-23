@@ -8,11 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		086C7531212EC5A10081BBD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C7530212EC5A10081BBD5 /* AppDelegate.swift */; };
-		086C7533212EC5A10081BBD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C7532212EC5A10081BBD5 /* ViewController.swift */; };
+		086C7533212EC5A10081BBD5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C7532212EC5A10081BBD5 /* MainViewController.swift */; };
 		086C7536212EC5A10081BBD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 086C7534212EC5A10081BBD5 /* Main.storyboard */; };
 		086C7538212EC5A20081BBD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 086C7537212EC5A20081BBD5 /* Assets.xcassets */; };
 		086C753B212EC5A20081BBD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 086C7539212EC5A20081BBD5 /* LaunchScreen.storyboard */; };
 		086C7546212EC5A20081BBD5 /* PieGraphSamplerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C7545212EC5A20081BBD5 /* PieGraphSamplerTests.swift */; };
+		086C7552212EC6030081BBD5 /* PieGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C7551212EC6030081BBD5 /* PieGraphView.swift */; };
+		086C7554212EC6270081BBD5 /* PieGraphView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086C7553212EC6270081BBD5 /* PieGraphView.xib */; };
+		086C7557212EC6B20081BBD5 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C7556212EC6B20081BBD5 /* Extension.swift */; };
+		086C755A212EC6E70081BBD5 /* UnitBezier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C7559212EC6E70081BBD5 /* UnitBezier.swift */; };
+		086C755C212EC7250081BBD5 /* AnimationCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C755B212EC7250081BBD5 /* AnimationCurve.swift */; };
+		086C755F212EC75C0081BBD5 /* GraphData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C755E212EC75C0081BBD5 /* GraphData.swift */; };
+		086C7561212EC7DF0081BBD5 /* PieGraphAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C7560212EC7DF0081BBD5 /* PieGraphAnimationView.swift */; };
+		086C7563212EC7FB0081BBD5 /* PieGraphAnimationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086C7562212EC7FB0081BBD5 /* PieGraphAnimationView.xib */; };
+		086C7566212EC89B0081BBD5 /* MainViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C7564212EC89B0081BBD5 /* MainViewCell.swift */; };
+		086C7567212EC89B0081BBD5 /* MainViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086C7565212EC89B0081BBD5 /* MainViewCell.xib */; };
+		086C7569212EC9470081BBD5 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C7568212EC9470081BBD5 /* GraphViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +39,7 @@
 /* Begin PBXFileReference section */
 		086C752D212EC5A10081BBD5 /* PieGraphSampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PieGraphSampler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		086C7530212EC5A10081BBD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		086C7532212EC5A10081BBD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		086C7532212EC5A10081BBD5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		086C7535212EC5A10081BBD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		086C7537212EC5A20081BBD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		086C753A212EC5A20081BBD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +47,17 @@
 		086C7541212EC5A20081BBD5 /* PieGraphSamplerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PieGraphSamplerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		086C7545212EC5A20081BBD5 /* PieGraphSamplerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieGraphSamplerTests.swift; sourceTree = "<group>"; };
 		086C7547212EC5A20081BBD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		086C7551212EC6030081BBD5 /* PieGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieGraphView.swift; sourceTree = "<group>"; };
+		086C7553212EC6270081BBD5 /* PieGraphView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PieGraphView.xib; sourceTree = "<group>"; };
+		086C7556212EC6B20081BBD5 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		086C7559212EC6E70081BBD5 /* UnitBezier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitBezier.swift; sourceTree = "<group>"; };
+		086C755B212EC7250081BBD5 /* AnimationCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationCurve.swift; sourceTree = "<group>"; };
+		086C755E212EC75C0081BBD5 /* GraphData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphData.swift; sourceTree = "<group>"; };
+		086C7560212EC7DF0081BBD5 /* PieGraphAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieGraphAnimationView.swift; sourceTree = "<group>"; };
+		086C7562212EC7FB0081BBD5 /* PieGraphAnimationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PieGraphAnimationView.xib; sourceTree = "<group>"; };
+		086C7564212EC89B0081BBD5 /* MainViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCell.swift; sourceTree = "<group>"; };
+		086C7565212EC89B0081BBD5 /* MainViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewCell.xib; sourceTree = "<group>"; };
+		086C7568212EC9470081BBD5 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +99,16 @@
 		086C752F212EC5A10081BBD5 /* PieGraphSampler */ = {
 			isa = PBXGroup;
 			children = (
+				086C7558212EC6D50081BBD5 /* Animation */,
+				086C7555212EC6A60081BBD5 /* Extension */,
+				086C755D212EC7530081BBD5 /* GraphData */,
+				086C7550212EC5EE0081BBD5 /* GraphView */,
 				086C7530212EC5A10081BBD5 /* AppDelegate.swift */,
-				086C7532212EC5A10081BBD5 /* ViewController.swift */,
+				086C7532212EC5A10081BBD5 /* MainViewController.swift */,
 				086C7534212EC5A10081BBD5 /* Main.storyboard */,
+				086C7564212EC89B0081BBD5 /* MainViewCell.swift */,
+				086C7565212EC89B0081BBD5 /* MainViewCell.xib */,
+				086C7568212EC9470081BBD5 /* GraphViewController.swift */,
 				086C7537212EC5A20081BBD5 /* Assets.xcassets */,
 				086C7539212EC5A20081BBD5 /* LaunchScreen.storyboard */,
 				086C753C212EC5A20081BBD5 /* Info.plist */,
@@ -94,6 +123,42 @@
 				086C7547212EC5A20081BBD5 /* Info.plist */,
 			);
 			path = PieGraphSamplerTests;
+			sourceTree = "<group>";
+		};
+		086C7550212EC5EE0081BBD5 /* GraphView */ = {
+			isa = PBXGroup;
+			children = (
+				086C7551212EC6030081BBD5 /* PieGraphView.swift */,
+				086C7553212EC6270081BBD5 /* PieGraphView.xib */,
+				086C7560212EC7DF0081BBD5 /* PieGraphAnimationView.swift */,
+				086C7562212EC7FB0081BBD5 /* PieGraphAnimationView.xib */,
+			);
+			path = GraphView;
+			sourceTree = "<group>";
+		};
+		086C7555212EC6A60081BBD5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				086C7556212EC6B20081BBD5 /* Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		086C7558212EC6D50081BBD5 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				086C7559212EC6E70081BBD5 /* UnitBezier.swift */,
+				086C755B212EC7250081BBD5 /* AnimationCurve.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		086C755D212EC7530081BBD5 /* GraphData */ = {
+			isa = PBXGroup;
+			children = (
+				086C755E212EC75C0081BBD5 /* GraphData.swift */,
+			);
+			path = GraphData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +242,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				086C7554212EC6270081BBD5 /* PieGraphView.xib in Resources */,
+				086C7567212EC89B0081BBD5 /* MainViewCell.xib in Resources */,
 				086C753B212EC5A20081BBD5 /* LaunchScreen.storyboard in Resources */,
+				086C7563212EC7FB0081BBD5 /* PieGraphAnimationView.xib in Resources */,
 				086C7538212EC5A20081BBD5 /* Assets.xcassets in Resources */,
 				086C7536212EC5A10081BBD5 /* Main.storyboard in Resources */,
 			);
@@ -197,8 +265,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				086C7533212EC5A10081BBD5 /* ViewController.swift in Sources */,
+				086C7566212EC89B0081BBD5 /* MainViewCell.swift in Sources */,
+				086C7569212EC9470081BBD5 /* GraphViewController.swift in Sources */,
+				086C755C212EC7250081BBD5 /* AnimationCurve.swift in Sources */,
+				086C7561212EC7DF0081BBD5 /* PieGraphAnimationView.swift in Sources */,
+				086C7533212EC5A10081BBD5 /* MainViewController.swift in Sources */,
+				086C7552212EC6030081BBD5 /* PieGraphView.swift in Sources */,
+				086C755F212EC75C0081BBD5 /* GraphData.swift in Sources */,
 				086C7531212EC5A10081BBD5 /* AppDelegate.swift in Sources */,
+				086C755A212EC6E70081BBD5 /* UnitBezier.swift in Sources */,
+				086C7557212EC6B20081BBD5 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -345,7 +421,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -359,7 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7CFA6756Z9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PieGraphSampler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -377,7 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7CFA6756Z9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PieGraphSampler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
