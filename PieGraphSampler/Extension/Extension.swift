@@ -74,8 +74,7 @@ extension Double {
     }
     
     /*
-     * 角度を弧度に変換
-     *
+     * 角度(degree) -> 弧度(radian)
      * radian（弧度 略:rad）= degrees（角度 略:deg） * PI（π）/ 180
      */
     
@@ -88,12 +87,12 @@ extension Double {
             return self / 180 * .pi
         }
     }
-    
+
     /*
-     * 弧度を角度に変換
+     * 弧度(radian) -> 角度(degree)
      */
     
-    var degereeValue: Double {
+    var degreeValue: Double {
         if #available(iOS 10.0, *) {
             let radianMeasurement = Measurement(value: self, unit: UnitAngle.radians)
             let degreeMeasurement = radianMeasurement.converted(to: .degrees)
