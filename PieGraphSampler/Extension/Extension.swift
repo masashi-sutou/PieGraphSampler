@@ -62,18 +62,6 @@ extension UIView {
 extension Double {
     
     /*
-     * 乱数（テストデータ）
-     */
-    
-    static func random(lower: UInt32, upper: UInt32) -> Double {
-        guard upper >= lower else {
-            return 0
-        }
-        
-        return Double(arc4random_uniform(upper - lower) + lower)
-    }
-    
-    /*
      * 角度(degree) -> 弧度(radian)
      * radian（弧度 略:rad）= degrees（角度 略:deg） * PI（π）/ 180
      */
@@ -138,17 +126,6 @@ extension String {
     }
 }
 
-extension CGFloat {
-    
-    /*
-     * 乱数
-     */
-    
-    static var random: CGFloat {
-        return CGFloat(arc4random()) / CGFloat(UInt32.max)
-    }
-}
-
 extension UIColor {
     
     /*
@@ -156,9 +133,9 @@ extension UIColor {
      */
     
     static var random: UIColor {
-        return UIColor(red:   .random,
-                       green: .random,
-                       blue:  .random,
+        return UIColor(red:   .random(in: 0...1),
+                       green: .random(in: 0...1),
+                       blue:  .random(in: 0...1),
                        alpha: 1.0)
     }
 }

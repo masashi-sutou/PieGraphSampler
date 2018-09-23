@@ -13,7 +13,7 @@ struct GraphData {
     let title: String
     let color: UIColor
     
-    init(value: Double = Double.random(lower: 5, upper: 25), title: String = "", color: UIColor = UIColor.random) {
+    init(value: Double = Double.random(in: 5...25), title: String = "", color: UIColor = UIColor.random) {
         self.value = value
         self.title = title
         self.color = color
@@ -21,12 +21,12 @@ struct GraphData {
     
     static var random: [GraphData] {
         var random: [GraphData] = []
-        let count = Double.random(lower: 0, upper: 5)
+        let count = Int.random(in: 0...5)
         guard count > 0 else {
             return random
         }
         
-        for _ in 1...Int(count) {
+        for _ in 1...count {
             random.append(GraphData())
         }
         // 降順
