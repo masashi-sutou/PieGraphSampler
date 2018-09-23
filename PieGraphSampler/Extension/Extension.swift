@@ -112,7 +112,7 @@ extension String {
     @discardableResult
     func drawCentering(origin: CGPoint, color: UIColor, font: UIFont) -> CGPoint {
         
-        let attributes: [NSAttributedStringKey: Any] = [.foregroundColor: color, .font: font]
+        let attributes: [NSAttributedString.Key: Any] = [.foregroundColor: color, .font: font]
         let bounding = (self as NSString).boundingRect(with: .zero, options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
         (self as NSString).draw(at: CGPoint(x: origin.x - bounding.width / 2, y: origin.y - bounding.height / 2), withAttributes: attributes)
         let tailPoint = CGPoint(x: origin.x + ceil(bounding.width), y: origin.y + ceil(bounding.height))
@@ -129,8 +129,8 @@ extension String {
         paragraphStyle.lineBreakMode = .byWordWrapping
         paragraphStyle.alignment = .left
         
-        let attributes = [NSAttributedStringKey.font: font,
-                          NSAttributedStringKey.paragraphStyle: paragraphStyle]
+        let attributes = [NSAttributedString.Key.font: font,
+                          NSAttributedString.Key.paragraphStyle: paragraphStyle]
         
         let bounding = (self as NSString).boundingRect(with: .zero, options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
         

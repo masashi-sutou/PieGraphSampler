@@ -8,7 +8,7 @@
 
 import CoreGraphics
 
-enum AnimationCurve {
+enum GraphAnimationCurve {
     case linear, ease, easeIn, easeOut, easeInOut, original(CGPoint, CGPoint)
     
     var p1: CGPoint {

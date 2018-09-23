@@ -211,9 +211,11 @@
 				TargetAttributes = {
 					086C752C212EC5A10081BBD5 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 					086C7540212EC5A20081BBD5 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = 086C752C212EC5A10081BBD5;
 					};
 				};
@@ -443,7 +445,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sample.PieGraphSampler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -461,7 +463,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sample.PieGraphSampler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -481,7 +483,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sample.PieGraphSamplerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PieGraphSampler.app/PieGraphSampler";
 			};
@@ -502,7 +504,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sample.PieGraphSamplerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PieGraphSampler.app/PieGraphSampler";
 			};

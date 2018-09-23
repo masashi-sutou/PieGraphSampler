@@ -48,7 +48,7 @@ final class PieGraphAnimationView: UIView {
     private var arcTextLayers: [CATextLayer] = []
     
     // 表示アニメーション
-    private let curve: AnimationCurve = .ease
+    private let curve: GraphAnimationCurve = .ease
     private lazy var unitBezier = UnitBezier(p1: curve.p1, p2: curve.p2)
     private var displayLink: CADisplayLink?
     private var startTimeInterval: CFTimeInterval?
@@ -89,7 +89,7 @@ final class PieGraphAnimationView: UIView {
             textLayer.fontSize = font.pointSize
             textLayer.font = font
             textLayer.frame = CGRect(origin: .zero, size: text.size(font: font))
-            textLayer.alignmentMode = "center"
+            textLayer.alignmentMode = .center
             centerCircleLayer.addSublayer(textLayer)
             self.centerCircleTextLayer = textLayer
             self.centerCircleLayer?.isHidden = true
@@ -126,7 +126,7 @@ final class PieGraphAnimationView: UIView {
             textLayer.font = font
             textLayer.frame = CGRect(origin: .zero, size: text.size(font: font))
             textLayer.isHidden = true
-            textLayer.alignmentMode = "center"
+            textLayer.alignmentMode = .center
             arcLayer.addSublayer(textLayer)
             arcTextLayers.append(textLayer)
             self.layer.addSublayer(arcLayer)
@@ -145,7 +145,7 @@ final class PieGraphAnimationView: UIView {
         textLayer.fontSize = font.pointSize
         textLayer.font = font
         textLayer.frame = CGRect(origin: .zero, size: text.size(font: font))
-        textLayer.alignmentMode = "center"
+        textLayer.alignmentMode = .center
         centerCircleLayer.addSublayer(textLayer)
         self.centerCircleTextLayer = textLayer
         self.centerCircleLayer?.isHidden = true
@@ -181,7 +181,7 @@ final class PieGraphAnimationView: UIView {
         
         startTimeInterval = CACurrentMediaTime()
         displayLink = CADisplayLink(target: self, selector: #selector(updatePathAnimation(_:)))
-        displayLink?.add(to: .current, forMode: .commonModes)
+        displayLink?.add(to: .current, forMode: RunLoop.Mode.common)
     }
     
     @objc private func updatePathAnimation(_ sender: CADisplayLink) {
@@ -220,7 +220,7 @@ final class PieGraphAnimationView: UIView {
         rotationAnimation.repeatCount = .infinity
         rotationAnimation.autoreverses = false
         rotationAnimation.isRemovedOnCompletion = false
-        rotationAnimation.fillMode = kCAFillModeForwards
+        rotationAnimation.fillMode = .forwards
         arcLayers.forEach {
             $0.add(rotationAnimation, forKey: InfinityRotationAnimation.key)
         }
@@ -234,7 +234,7 @@ final class PieGraphAnimationView: UIView {
         reverseRotationAnimation.repeatCount = .infinity
         reverseRotationAnimation.autoreverses = false
         reverseRotationAnimation.isRemovedOnCompletion = false
-        reverseRotationAnimation.fillMode = kCAFillModeForwards
+        reverseRotationAnimation.fillMode = .forwards
         arcTextLayers.forEach {
             $0.add(reverseRotationAnimation, forKey: InfinityRotationAnimation.key)
         }
